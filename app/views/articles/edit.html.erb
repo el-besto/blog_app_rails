@@ -1,9 +1,9 @@
-<%= form_for @article do |f| %>
+<%= simple_form_for @article do |f| %>
 
-  <%= f.text_field :title, placeholder: "title of article" %>
-  <%= f.text_field :author, placeholder: "Author name" %>
-  <%= f.text_area :content, placeholder: "Artilcle body goes here" %>
+  <%= f.input :title, placeholder: "title of article" %>
+  <%= f.input :author, placeholder: "Author name" %>
+  <%= f.input :content, placeholder: "Article body goes here" %>
 
-  <%= f.submit "Update Article" %>
+  <%= f.button :submit %>
 
 <% end %>
