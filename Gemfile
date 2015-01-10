@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
   # Use Foundation 5 front-end framework; relies on 'rails_layout' gem in dev
   gem 'foundation-rails'
 
-  # Use Simple Form
+  # Use simple_form for additional form helpers
   gem 'simple_form'
 
 # Use jquery as the JavaScript library
