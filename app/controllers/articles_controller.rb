@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
     new_article = params.require(:article).permit(:title, :author, :content)
     article = Article.create(new_article)
     # after create, redirect_to show route
-    redirect_to article #"/articles/#{article.id}"
+    redirect_to article
   end
 
   def show
@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    new_article = params.require(:article).permit(:title, :author, :description)
+    new_article = params.require(:article).permit(:title, :author, :content)
     article = Article.create(new_article)
     redirect_to article_path(article)
   end
